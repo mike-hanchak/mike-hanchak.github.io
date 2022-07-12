@@ -59,8 +59,7 @@ body {
 }
 
 
-/*---HEADER------------------------------------------------------------------*/
-.burger{display: none;}
+/*---HEADER-------------------------------------------------------------------*/
 
 .header_main {
     display: flex;
@@ -94,7 +93,7 @@ transform: scale(1.01);
 }
 .header_list_item {
     display: inline;
-    margin-left: 3%;
+    margin-left: 2.5%;
     transition: 1s all;
 }
 .language_choice {
@@ -167,9 +166,9 @@ transform: scale(1.01);
   }
 .text_on_lines{
     position: absolute;
-    font-family: 'Quicksand', sans-serif;
-    width: 22%;
-    margin-top: 30%;
+    font-family: 'Montserrat', sans-serif;
+    width: 29%;
+    margin-top: 32%;
     margin-left: 4%;
     color: #939393;
     opacity: 0;
@@ -184,6 +183,7 @@ transform: scale(1.01);
     display: flex;
     position: absolute;
     width: 96%;
+    margin-top: 2.36em;
     margin-left: 4%;
     opacity: 0;
     transform: translateY(10%);
@@ -196,7 +196,7 @@ transform: scale(1.01);
 .name{
     margin-top: 17.8%;
     display: flex;
-    font-size: 11.5vw;
+    font-size: 11.73vw;
     font-weight: 700;
     color: rgb(0, 0, 0);
     transition: 0.3s all;
@@ -217,9 +217,9 @@ transform: scale(1.01);
 .name2{
     margin-top: 17.8%;
     display: flex;
-    font-size: 11.5vw;
+    font-size: 11.73vw;
     font-weight: 700;
-    margin-left: 31.5%;
+    margin-left: 3.7%;
     color: rgba(0, 0, 0, 0);
     -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
@@ -237,12 +237,13 @@ transform: scale(1.01);
 }
 .pg1_text2{
     margin-left: 20%;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     margin-top: 2.5%;
     line-height: 150%;
 }
 .name_text{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 500;
     margin-top: 2.5%;
     margin-left: 65.5%;
@@ -274,10 +275,13 @@ transform: scale(1.01);
 }
 /*---SCROLL TEXT-------------------------------------------------------------------*/
 .marquee{
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300;
     width: 100%;
     padding: 0.5% 0 0.5% 0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
+    word-spacing: 0.6vw;
 }
 
 @-webkit-keyframes scroll {
@@ -394,14 +398,14 @@ transform: scale(1.01);
 
 .pg2_text2{
     font-size: 1.4vw;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     margin-top: 27%;
     line-height: 150%;
 }
 .pg2_text3{
     font-size: 1.4vw;
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     margin-top: 2%;
     line-height: 150%;
@@ -441,7 +445,8 @@ transform: scale(1.01);
 .pricing {
     color: #000;
     transition: 0.3s all;
-    margin-left: 4%;
+    margin-left: 5%;
+    margin-right: 5%;
 }
 .pricing:hover{
     -webkit-text-stroke-width: 2px;
@@ -450,7 +455,8 @@ transform: scale(1.01);
 }
 .pg3_lines {
     margin-top: 0.8%;
-    width: 95%;
+    width: 100%;
+    margin-left: -5%;
 }
 
 /*---MAIN_PAGE_3_2-------------------------------------------------------------------*/
@@ -516,7 +522,7 @@ transform: scale(1.01);
     margin-top: 24%;
 }
 .lesson{
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Montserrat', sans-serif;
     font-weight: 300;
     font-size: 1.7vw;
     margin-top: 7.5%;
@@ -598,16 +604,16 @@ transform: scale(1.01);
     margin-left: 26%;
 }
 .page4_text2{
-    font-size: 2.22vw;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
+    font-size: 2.08vw;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
     line-height: 150%;
 }
 
 /*---SCROLL TEXT 2-------------------------------------------------------------------*/
 .marquee2{
     width: 100%;
-    padding: 0.2% 0 0.5% 0;
+    padding: 0.2% 0 1% 0;
     border-top: 1px solid #000;
     border-bottom: 1px solid #000;
 }
@@ -797,8 +803,9 @@ transform: scale(1.01);
 }
 
 .review_text {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 200;
+    font-size: 1vw;
     line-height: 150%;
     margin-top: 3.1%;
 }
@@ -891,11 +898,13 @@ transform: scale(1.01);
     margin-top: 4%;
 }
 
+
 /*-------MOBILE ADAPTIVE BLOCK------------------------------------------------------------------------*/
 
 /*--------BLOCKED FOR PC--------------*/
 .mobile_review{display: none;}
 .foot_mobile_element{display: none;}
+.burger{display: none;}
 .mobile_move{margin-left: 0;}
 /*--------BLOCKED PC---- END----------*/
 
@@ -917,7 +926,7 @@ br {display: none;}
 .all_right{display: none;}
 /*--------BLOCKED ------ END----------*/
 .main_page_1{display: block;}
-.logo {width: 13%;margin-top: 2.6em;margin-left: 2%;}
+.logo {width: 13%;margin-top: 0.9em;margin-left: 2%;}
 .main_page_1_2{width: 100%;}
 .page_1_img {width: 100%;position: absolute;top: 0;}
 .name_horrible{position: relative;top: 155em;}
@@ -939,9 +948,9 @@ br {display: none;}
 .btn_20_dolars{width: 44%;margin-left: 4%;}
 .btn_150_dolars{width: 44%;}
 .btn_100_dolars{width: 44%;}
-.mobile_move{margin-top: 3.5em;margin-right: 51%;}
+.mobile_move{margin-top: 3.5em;margin-right: 47.5%;}
 .number{font-size: 10vw;}
-.lesson{font-size: 4.2vw;}
+.lesson{font-size: 3.8vw;}
 .main_page_4{width: 100%;display: block;padding: 0 5% 0;}
 .main_page_4_1{width: 100%;}
 .main_page_4_2{width: 100%;}
@@ -987,8 +996,8 @@ br {display: none;}
 .menu__item {display: block;padding: 12px 24px;color: #000;    font-family: 'Quicksand', sans-serif;
     font-weight: 500;font-size: 5.5vw;text-decoration: none;transition-duration: .25s;}
 .menu__item:hover {background-color: #000;}
+.hide_line{opacity: 0;}
 .language_choice_mob{margin-top: 0.5em; margin-left: 0.5em;font-size: 9vw;font-family: 'Quicksand', sans-serif;
     font-weight: 500;color: rgb(197, 0, 0);background-color: #86868600;}
-.lang_item{font-size: 8vw;color: rgb(197, 0, 0);background-color: rgba(0, 54, 54, 0);font-weight: 500;}
-.mobile_move{margin-left: 3.5%;}
+    .lang_item{font-size: 8vw;color: rgb(197, 0, 0);background-color: rgba(0, 54, 54, 0);font-weight: 500;}
 }

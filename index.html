@@ -21,12 +21,30 @@
                 <li class="header_list_item"><a class="link_style" href="#buttons">SERVICES</a></li>
                 <li class="header_list_item"><a class="link_style" href="#reviews">FEEDBACKS</a></li>
                 <li class="header_list_item"><a class="link_style" href="#footer">CONTACTS</a></li>
-                <select class="language_choice" name="language" id="">
+                <select class="language_choice" name="language" id="lang"
+                onchange="window.location.href = this.options[this.selectedIndex].value">
                     <option class="lang_item" value="">EN</option>
-                    <option class="lang_item" value="">UA</option>
+                    <option class="lang_item" value="ukr_version/index_ukr.html">UA</option>
                 </select>
             </ul>
         </div>
+        <div class="burger">
+            <input id="menu__toggle" type="checkbox" />
+            <label class="menu__btn" for="menu__toggle">
+              <span></span>
+            </label>
+            <ul class="menu__box">
+                <li><a class="menu__item" href="#reviews2">FEEDBACKS</a></li>
+                <li><a class="menu__item" href="#footer">CONTACTS</a></li>
+                <li><a class="menu__item" href="#buttons">SERVICES</a></li>
+                <li><a class="menu__item" href="#aboutus">ABOUT</a></li>
+                <select class="language_choice_mob" name="language" id="lang"
+                onchange="window.location.href = this.options[this.selectedIndex].value">
+                    <option class="lang_item" value="">EN</option>
+                    <option class="lang_item" value="ukr_version/index_ukr.html">UA</option>
+                </select>
+            </ul>
+          </div>
     </header>
 <!--MAIN------------------------------------------------------->
     <main>
@@ -67,6 +85,7 @@
                     <img src="img/pg1img.jpg" alt="" class="page_1_img">
                 </div>
             </div>
+
             <h1 class="marquee"><span>acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar
                 acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar acoustic guitar classic guitar bass guitar electric guitar
             </span></h1>
@@ -110,10 +129,10 @@
                     <p class="dolars_text"><span class="number">20$</span><br><span class="lesson lesson2">Guitar lessons</span></p>
                 </div>
                 <div class="btn_150_dolars">
-                    <p class="dolars_text"><span class="number">150$</span><br><span class="lesson">Performance</span></p>
+                    <p class="dolars_text"><span class="number">150$+</span><br><span class="lesson">Performance</span></p>
                 </div>
-                <div class="btn_100_dolars">
-                    <p class="dolars_text"><span class="number">100$</span><br><span class="lesson">Session work</span></p>
+                <div class="btn_150_dolars mobile_move">
+                    <p class="dolars_text"><span class="number">100$+</span><br><span class="lesson">Session work</span></p>
                 </div>
             </div>
             <!--PAGE 4------------------------------------------------------->
@@ -156,6 +175,23 @@
                     <p class="name_rev_text"><img src="img/name_review.svg" alt="" class="name_review">Maryana</p>     
                 </div>
             </div>
+            <div class="mobile_review" id="reviews2">
+                <div class="slider_item">
+                    <p class="und_slide_text">Playing the guitar, Tutor for children</p>
+                    <p class="review_text">“Mykhailo is my first teacher. Yes, only after 30 years did I dare to take guitar lessons. Step by step I learned, mastered notes and simple but charming melodies. Lessons with Mykhailo are always interesting and very lively.”</p>
+                        <p class="name_rev_text"><img src="img/name_review.svg" alt="" class="name_review">Olexander</p>
+                </div>
+                <div class="slider_item review_left_mobile">
+                    <p class="und_slide_text">Guitar play</p>
+                    <p class="review_text">Mykhailo Mykhailovych plays the guitar with my son. The teacher teaches conscientiously, I like how he behaves in the lessons, how he explains. I am satisfied with the classes. I liked everything very much. Thank you for your cooperation!</p>
+                        <p class="name_rev_text"><img src="img/name_review.svg" alt="" class="name_review">Roman</p>
+                </div>
+                <div class="slider_item">
+                    <p class="und_slide_text">Playing the guitar, Basic level</p>
+                    <p class="review_text">We are satisfied with tutor Mykhailo Mykhailovych. I was able to find a common language with my daughter, but we did not practice for long, because the child is 8 years old. In the future, we plan to study with this teacher.</p>
+                        <p class="name_rev_text"><img src="img/name_review.svg" alt="" class="name_review">Anastasiia</p>   
+                </div>
+            </div>
         </div>
     </main>
 <!--FOOTER------------------------------------------------------->
@@ -165,6 +201,10 @@
                 <p class="name_footer">Mike Hanchak</p>
                 <p class="contact_me_foot">+420 773 728 876</p>
                 <p class="contact_me_foot">M.hanchak@icloud.com</p>
+                <div class="foot_mobile_element">
+                    <p class="contact_me_foot_mobile">+420 773 728 876</p>
+                    <p class="contact_me_foot_mobile">M.hanchak@icloud.com</p>
+                </div>
                 <p class="all_right">All RIGHTS RESERVED</p>
             </div>
             <div class="footer_1_2">
